@@ -19,13 +19,13 @@
         <a href="#contact" class="nav-item item-4">Contact</a>
       </nav>
 
-      <div class="hero-section">
+      <div class="hero-section" id="hero-section">
           <h1>Découvrez Kyoto</h1>
-          <button class="btn btn-activity">
+          <button class="btn btn-herosection btn-activity">
             Activités
             <img src="./ressources/icons-pack/016-origami.svg" alt="" class="origami-icon">
           </button>
-          <button class="btn btn-contact">
+          <button class="btn btn-herosection btn-contact">
             Contact  
             <img src="./ressources/icons-pack/049-japan.svg" alt="" class="japan-icon">
           </button>
@@ -34,30 +34,120 @@
 
 
     <main>
-        <section class="activities">
+        <section class="activities" id="activities">
           <div class="container">
+            <p class="subtitle">Activités Populaires</p>
+            <h2>Que faire à Kyoto ?</h2>
 
+            <div class="activity activities-1">
+              <div class="text-activity text-activities-1">
+                <h3>Visitez de splendides temples.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum aut ducimus voluptate eaque minima illo accusamus deserunt ipsam atque assumenda voluptatibus, fugit dicta placeat maiores error voluptates inventore omnis harum? Atque aperiam numquam iusto!</p>
+              </div>
+              <img class="activity-img activity-1-img" src="./ressources/temple-activity.jpg" alt="Temple de Kyoto">
+              <button class="btn btn-planification btn-plan-1">Plannifier un tour</button>
+            </div>
+
+            <div class="activity activities-2">
+              <div class="text-activity text-activities-2">
+                <h3>Dégustez de délicieux mets.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure a repellendus, corporis ad repellat ex. Numquam doloribus earum libero, dolores, illum voluptates molestiae vel nihil ipsa consectetur eligendi suscipit corrupti iusto voluptatibus, sapiente voluptate.</p>
+              </div>
+              <img class="activity-img activity-2-img" src="./ressources/asian-food.jpg" alt="Divers sushis mis dans un plateau">
+              <button class="btn btn-planification btn-plan-2">Plannifier un tour</button>
+            </div>
+
+            <div class="activity activities-3">
+              <div class="text-activity text-activities-3">
+                <h3>Vivez comme un local.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita mollitia quam voluptates saepe porro ullam vero, tempora dicta at modi animi doloremque itaque totam suscipit, quasi dolorum fugit qui sapiente! Culpa cupiditate facere similique?</p>
+              </div>
+              <img class="activity-img activity-3-img" src="./ressources/japan-life.jpg" alt="Petit commerce à Kyoto">
+              <button class="btn btn-planification btn-plan-3">Plannifier un tour</button>
+            </div>
           </div>
         </section>
 
-
         <section class="parallax">
-
+          <div class="parallax-text">
+            <p class="big-japanes-title-style">冒険に行く</p>
+            <p class="tiny-japanese-title-style">Partez à l'aventure</p>
+          </div>
+          <!-- <img src="./ressources/parallax-large-flou.jpg" alt="Personne assise à l'intérieur de sa maison typique devant les portes ouvertes en grand sur la nature, image un peu floutée"> -->
         </section>
 
-        <section class="pricing">
-
+        <section class="pricing" id="pricing">
+          <div class="container-pricing">
+            <p class="subtitle">Les différents tours</p>
+            <h2>Choissisez ce qui vous convient</h2>
+            <div class="pack-pricing-card">
+              <div class="pricing-card pricing-card-1">
+                <div class="head-card">
+                  <p class="title-card">Basique -----<span class="Prices-1">20€</span></p>
+                  <p class="card-p">Lorem ipsum dolor sit amet.</p>
+                </div>
+                  <div class="main-card">
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Visite à pied.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Sites sacrées.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Cours de cuisine.</p>
+                </div>
+                <button class="btn btn-reservation btn-reservation-1">Réserver</button>
+              </div>
+              <div class="pricing-card pricing-card-2">
+                <div class="head-card">
+                  <p class="title-card">Incroyable -----<span class="Prices-2">75€</span></p>
+                  <p class="card-p">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="main-card">
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Visite à pied.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Sites sacrées.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Cours de cuisine.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Visite nocturne.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Restaurant gastronomique.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Circuit privé.</p>
+                </div>
+                <button class="btn btn-reservation btn-reservation-2">Réserver</button>
+              </div>              
+              <div class="pricing-card pricing-card-3">
+                <div class="head-card">
+                  <p class="title-card">Fun -----<span class="Prices-3">45€</span></p>
+                  <p class="card-p">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="main-card">
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Visite à pied.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Sites sacrées.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Cours de cuisine.</p>
+                  <p><span><img class="checked-curly" src="./ressources/icons/checked-curly.svg" alt=""></span>Visite nocturne.</p>
+                </div>
+                <button class="btn btn-reservation btn-reservation-3">Réserver</button>
+              </div>
+              <div class="card-shadow">
+                <img src="./ressources/shadow.png" alt="">
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section class="Contact">
-
+        <section class="contacts" id="contact">
+          <div class="container-contact">
+            <p class="subtitle">Partageons de bons moments !</p>
+            <h2>Voilà où vous pouvez me contacter</h2>
+            <div class="contact contact-item-1">
+              <p>kyoto_lumière@gmail.com</p> <img src="./ressources/icons/email-envelope.svg" alt="">
+            </div>
+            <div class="contact contact-item-2">
+              <p>kyoto_lumière_IG</p> <img src="./ressources/icons/instagram.svg" alt="">
+            </div>
+            <div class="contact contact-item-3">
+              <p>kyoto_lumière_FB</p> <img src="./ressources/icons/facebook.svg" alt="">
+            </div>
+          </div>
         </section>
 
     </main>
 
-
     <footer>
-
+      <p>Tous droits réservés</p>
     </footer>
     
   </body>
