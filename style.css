@@ -96,6 +96,11 @@ nav {
   text-decoration: none;
 }
 
+.nav-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero-section {
   min-height: 700px;
   background-color: var(--lighter-dark);
@@ -190,10 +195,19 @@ main .activities .container h3{
 .activity-img {
   height: 250px;
 }
-.btn-planification {
+.a-planification {
   width: 150px;
   height: 36px;
+  display: flex;
+  text-decoration: none;
+  color: var(--dark-base);
+  font-size: var(--fs-14);
+  background: var(--light-white);
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
 }
+
 h3 {
   font-family: var(--accent-font);
   font-size: var(--fs-20);
@@ -228,7 +242,7 @@ h3 {
   justify-self: center;
   align-self: center;
 }
-.btn-plan-2 {
+.a-plan-2 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -250,7 +264,7 @@ h3 {
   justify-self: center;
   align-self: center;
 }
-.btn-plan-1, .btn-plan-3 {
+.a-plan-1, .a-plan-3 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -259,6 +273,35 @@ h3 {
   align-self: flex-end;
 }
 
+@media (max-width: 768px) {
+  .activities {
+    padding: 0;
+  }
+  .container h2 {
+    margin-bottom: 35px;
+  }
+  .container {
+    padding: 30px 10px 90px;
+  }
+  .activity {
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
+  .activities-2 .text-activity {
+    order: 2;
+  }
+  .activities-2 img {
+    order: 1;
+  }
+  .activity-img {
+    width: 100%;
+    padding: 25px;
+  }
+  .text-activity {
+    padding: 0px 25px 25px;
+    width: 100%;
+  }
+}
 /* class="parallax" */
 .parallax {
   position: relative;
@@ -280,13 +323,24 @@ h3 {
   text-align: center;
   font-weight: 600;
 }
-.big-japanes-title-style {
+.big-japanese-title-style {
   font-size: var(--fs-64);
 }
 .tiny-japanese-title-style {
   font-size: var(--fs-26);
 }
 
+@media (max-width: 600px) {
+  .parallax {
+    min-height: 200px;
+  }
+  .big-japanese-title-style {
+    font-size: var(--fs-40);
+  }
+  .tiny-japanese-title-style {
+    font-size: var(--fs-18);
+  }
+}
 /* class="pricing" */
 main .pricing .container-pricing {
   max-width: 100%;
@@ -406,6 +460,7 @@ z-index: 1;
   background: var(--light-orange-pinky);
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .contact p {
   width: auto;
@@ -425,5 +480,8 @@ footer {
   width: 100%;
   font-weight: 600;
   text-align: center;
-  text-decoration: underline;
+}
+
+footer a {
+  color: var(--dark-base);
 }
